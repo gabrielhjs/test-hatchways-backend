@@ -31,7 +31,7 @@ export class GetPostsUseCase implements IUseCase {
 
 		const postsLists = await Promise.all(tags.map(async (tag: string) => {
 			return await this.getPostsProvider.execute(
-				process.env.HATCHWAY_API_URL || "https://api.hatchways.io/assessment/blog/posts",
+				process.env.HATCHWAYS_API_URL || "https://api.hatchways.io/assessment/blog/posts",
 				tag
 			)
 		}))
