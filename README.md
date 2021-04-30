@@ -3,7 +3,7 @@
 
 This API is developed in NodeJs, Express and Typescript, using SOLID principles to increase scalability and facilitate the reading of the project code.
 
-# Instuctions
+# Instructions
 
 ## Setup
 Run:
@@ -15,7 +15,7 @@ yarn install
 The [.env](.env) file has the project's environment variables.
 - REDIS_PORT: port where the redis server is running;
 - HATCHWAYS_API_URL: url to fetch data from Hatchway API;
-- CACHE_EXPIRE_TIME_IN_SECONDS: time to expire the query cache, in seconds.
+- CACHE_EXPIRE_TIME_IN_SECONDS: time to expire the requests cache, in seconds.
 
 ## Start Typescript code server
 Run:
