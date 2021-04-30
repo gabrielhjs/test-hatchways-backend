@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getPostsController = void 0;
+const __1 = require("../../../");
+const superagentGetPostsProvider_1 = require("../../../providers/getPostsProvider/implements/superagentGetPostsProvider");
+const getPostsController_1 = require("./getPostsController");
+const getPostsUseCase_1 = require("./getPostsUseCase");
+const getPostsProvider = new superagentGetPostsProvider_1.SuperagentGetPostsProvider();
+const getPostsUseCase = new getPostsUseCase_1.GetPostsUseCase(getPostsProvider);
+const getPostsController = new getPostsController_1.GetPostsController(getPostsUseCase, __1.cacheProvider);
+exports.getPostsController = getPostsController;
