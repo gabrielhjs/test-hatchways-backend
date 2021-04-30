@@ -69,4 +69,4 @@ If you don't have a Redis server in your local environment, the Redis provider's
 
 ---
 
-by **Gabriel Sá** | Software Developer :smile:
+by **[Gabriel Sá](https://github.com/gabrielhjs)** | Software Developer :smile:
